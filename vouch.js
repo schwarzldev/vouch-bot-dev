@@ -93,7 +93,7 @@ client.once('ready', () => {
 });
 
 client.on('interactionCreate', async interaction => {
-    if (!interaction.isChatInputCommand()) return;
+    if (!interaction.isCommand()) return;
 
     const { commandName, options, member, user } = interaction;
 
