@@ -1,3 +1,4 @@
+require('express')().get('/', (req, res) => res.send('Bot aktif!')).listen(3000);
 // keepalive.js içeriği (birleştirildi)
 const express = require('express');
 const app = express();
