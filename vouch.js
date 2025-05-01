@@ -14,7 +14,9 @@ const BACKUP_CHANNEL_ID = process.env.BACKUP_CHANNEL_ID;
 const BACKUP_USER_ID = process.env.BACKUP_USER_ID;
 const MONGODB_URI = process.env.MONGODB_URI;
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers]
+});
 
 const commands = [
     new SlashCommandBuilder()
