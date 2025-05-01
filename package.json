@@ -4,7 +4,7 @@
   "description": "SCHWARZDEV ticket bot",
   "main": "ticket.js",
   "scripts": {
-    "start": "node keepalive.js && node ticket.js"
+    "start": "node ticket.js"
   },
   "dependencies": {
     "discord.js": "^14.19.2",
@@ -12,3 +12,4 @@
     "express": "^4.21.2"
   }
 }
+
